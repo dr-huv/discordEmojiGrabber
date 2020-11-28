@@ -1,6 +1,12 @@
 # emojiGrabber
-grabs discord emojis directly from link
+With this script you will be able to
 
-before running the script Make sure, there is a folder called "Discord emojis" in your desktop, all the emojis wil be saved there
+download any server emoji and use it without nitro,
 
-TODO : add an automatic folder creator
+features:-
+  1)Can use the emojis anywhere without nitro
+  2)Currently works only for non animated GIFs [update soon :)]
+  3)Saves all the emojis you copy into a folder (called "Discord emojis") in your desktop
+  ~~4)Rule the world~~
+  
+  Made with ~~the desire to not get a nitro subscription~~ LOVE by TheViralClovers
