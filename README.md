@@ -15,18 +15,18 @@ download any server emoji and use it without nitro,
 ## Requirments (pip install them)
   1.requests
   
-  2.win32clipboard
+  2.pywin32
   
-  3.PIL
+  3.pillow
   
   
   ## Instructions on how to use this thing:-
-   ## Linux
+   ~~## Linux
     
-    git clone https://github.com/TheViralClovers/emojiGrabber
-    cd emojiGrabber
-    python emojiGrabber.py
-   
+   ~~git clone https://github.com/TheViralClovers/emojiGrabber~~
+    ~~cd emojiGrabber~~
+    ~~python emojiGrabber.py~~
+   Sike doesnt work for linux yet,
    
   ## Windows
     1.Download the 'emojiGrabber.py' file
