@@ -19,6 +19,7 @@ download any server emoji and use it without nitro,
     
     ```
     git clone https://github.com/TheViralClovers/emojiGrabber
+    cd emojiGrabber
     python emojiGrabber.py
     ```
   Made with ~~the desire to not get a nitro subscription~~ LOVE by TheViralClovers
