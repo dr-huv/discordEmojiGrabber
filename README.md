@@ -4,6 +4,7 @@ With this script you will be able to
 download any server emoji and use it without nitro,
 
 ##features:-
+
   1.Can use the emojis anywhere without nitro
   
   2.Currently works only for non animated GIFs [update soon :)]
