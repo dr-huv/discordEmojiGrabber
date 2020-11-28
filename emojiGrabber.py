@@ -17,8 +17,8 @@ def getClipboard():
 
 #to get a random name for the file
 def getRandomFileName():
-    fileDestList = []
-    letters = string.ascii_lowercase
+    fileDestList = [] #created this list so that i can pass both the file destination and file name in the return statement
+    letters = string.ascii_lowercase #this is actually a string of all the lowercase letters
     fileName = ''.join((random.choice(letters)) for i in range(8))
     destination  = os.path.join(os.environ.get("USERPROFILE") , "Desktop" , "Discord emojis", fileName + ".png")
     fileDestList.append(fileName)
@@ -32,26 +32,17 @@ def createResizedImage():
     r = requests.get(getClipboard())
     with open(destination, 'wb') as f:
         f.write(r.content)    
-    image = Image.open(destination)
+    image = Image.open(destination) # I have combined the function that downloads the image and resizes the image because due to getRandomFileName, it would change value as soon as its called a second time
     image = image.resize((48, 48), Image.ANTIALIAS)
     image.save(destination)
 #to resize an image
         
-clipboardData = getClipboard()
-
-# print(clipboardData)
-
-# print(getRandomFileName())
-# print(getRandomFileName())
-
-#if recentValue != clipboardData:
-# createImage()
-# resizeImage()    
+clipboardData = getClipboard() 
 
 while True:
-    if recentValue != getClipboard():
+    if recentValue != getClipboard(): #this is to check if some new link has been copied
         recentValue = getClipboard()
         getRandomFileName()
         createResizedImage()
         print("Image processing done")
-    time.sleep(0.4)
+    time.sleep(0.4) # if this statement wasnt included, the program would consume all of the CPUs memeory, so the while statement now happens once every 0.4s
