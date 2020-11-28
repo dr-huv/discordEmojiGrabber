@@ -21,11 +21,12 @@ download any server emoji and use it without nitro,
   
   
   ## Instructions on how to use this thing:-
-   ~~## Linux
+   ## Linux
     
    ~~git clone https://github.com/TheViralClovers/emojiGrabber~~
     ~~cd emojiGrabber~~
     ~~python emojiGrabber.py~~
+    
    Sike doesnt work for linux yet,
    
   ## Windows
