@@ -23,9 +23,9 @@ download any server emoji and use it without nitro,
   ## Instructions on how to use this thing:-
    ## Linux
     
-    ```git clone https://github.com/TheViralClovers/emojiGrabber
+    git clone https://github.com/TheViralClovers/emojiGrabber
     cd emojiGrabber
-    python emojiGrabber.py```
+    python emojiGrabber.py
    
    
   ## Windows
