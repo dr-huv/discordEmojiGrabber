@@ -3,7 +3,7 @@ With this script you will be able to
 
 download any server emoji and use it without nitro,
 
-##features:-
+## features:-
 
   1.Can use the emojis anywhere without nitro
   
@@ -14,9 +14,10 @@ download any server emoji and use it without nitro,
   ~~4.Rule the world~~
   
   
-  ##Instructions on how to use this thing:-
+  ## Instructions on how to use this thing:-
     umm, copy paste? Also make sure to copy an image link before running this thing
-    ```bash
+    
+    ```
     git clone https://github.com/TheViralClovers/emojiGrabber
     python emojiGrabber.py
     ```
