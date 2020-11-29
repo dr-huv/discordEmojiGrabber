@@ -1,4 +1,4 @@
-# emojiGrabber
+# discordEmojiGrabber
 With this script you will be able to
 
 download any server emoji and use it without nitro,
