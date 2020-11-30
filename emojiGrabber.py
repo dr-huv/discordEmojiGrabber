@@ -5,6 +5,9 @@ import time
 import os
 import requests
 from PIL import Image
+from colorama import Fore, Back, Style,init
+
+init(convert=True)
 
 recentValue = ''
 
@@ -46,7 +49,7 @@ def createResizedImage():
         image.save(destination)
         status = 'Image processing done'
     except:
-        print("lmao, try copying an image url next time")
+        print(Fore.RED + "lmao, try copying an image url next time")
         status = 'Image processing Failed'
 
     return status
@@ -60,5 +63,8 @@ while True:
         if 'discord' in recentValue and 'png' in recentValue:# This makes sure, that the code is run only when a discord emoji link is copied and not everytie the clipboard changes value lol
             getRandomFileName()
             status = createResizedImage()
-            print(status)
+            if 'failed' in status:
+                print(Fore.RED + status)
+            else:
+                print(Fore.GREEN + status)
     time.sleep(0.4) # if this statement wasnt included, the program would consume all of the CPUs memeory, so the while statement now happens once every 0.4s
