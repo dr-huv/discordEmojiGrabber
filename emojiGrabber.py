@@ -40,7 +40,7 @@ def createResizedImage():
     try:
         r = requests.get(getClipboard())
         with open(destination, 'wb') as f:
-            f.write(r.content)    
+            f.write(r.content)
         image = Image.open(destination) # I have combined the function that downloads the image and resizes the image because due to getRandomFileName, it would change value as soon as its called a second time
         image = image.resize((48, 48), Image.ANTIALIAS)
         image.save(destination)
@@ -48,16 +48,17 @@ def createResizedImage():
     except:
         print("lmao, try copying an image url next time")
         status = 'Image processing Failed'
-    
+
     return status
 #to resize an image
-    
-clipboardData = getClipboard() 
+
+clipboardData = getClipboard()
 
 while True:
     if recentValue != getClipboard(): #this is to check if some new link has been copied
         recentValue = getClipboard()
-        getRandomFileName()
-        status = createResizedImage()
-        print(status)
+        if 'discord' in recentValue and 'png' in recentValue:# This makes sure, that the code is run only when a discord emoji link is copied and not everytie the clipboard changes value lol
+            getRandomFileName()
+            status = createResizedImage()
+            print(status)
     time.sleep(0.4) # if this statement wasnt included, the program would consume all of the CPUs memeory, so the while statement now happens once every 0.4s
