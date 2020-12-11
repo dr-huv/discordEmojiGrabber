@@ -23,13 +23,14 @@ download any server emoji and use it without nitro,
   ## Instructions on how to use this thing:-
    ## Linux
     
-   ~~git clone https://github.com/TheViralClovers/emojiGrabber~~
+   ``
+   git clone https://github.com/TheViralClovers/emojiGrabber
     
-   ~~cd emojiGrabber~~
+   cd emojiGrabber
     
-   ~~python emojiGrabber.py~~
+   python emojiGrabber.py `` or `` python3 emojiGrabber.py ``
     
-   Sike doesnt work for linux yet,
+   Make sure you have xclip installed
    
   ## Windows
    Download the zip file, then navigate to the directory in command prompt and
