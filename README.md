@@ -15,8 +15,8 @@ download any server emoji and use it without nitro,
 ## Requirments (pip install them)
   1.requests
   
-  2.pywin32
-  
+  2.pywin32(Windows)
+    
   3.pillow
   
   
