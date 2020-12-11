@@ -22,22 +22,20 @@ download any server emoji and use it without nitro,
   
   ## Instructions on how to use this thing:-
    ## Linux
-    
-   ``
-   git clone https://github.com/TheViralClovers/emojiGrabber
-    
-   cd emojiGrabber
-    
-   python emojiGrabber.py `` or `` python3 emojiGrabber.py ``
-    
+  ```sh
+  git clone https://github.com/TheViralClovers/emojiGrabber
+  cd emojiGrabber
+  python emojiGrabber.py or python3 emojiGrabber.py
+  ```
    Make sure you have xclip installed
    
   ## Windows
    Download the zip file, then navigate to the directory in command prompt and
-   
-    cd emojiGrabber
-    pip install -r requirements.txt
-    python emojiGrabber.py
+  ```sh
+  cd emojiGrabber
+  pip install -r requirements.txt
+  python emojiGrabber.py
+  ```
     
 Once these steps are done, go to an emoji on discord --> right click --> CHOOSE COPY LINK (not copy message link)
 the emoji should automatically appear in a folder of your desktop, no need to open the script again, it will keep downloading the emojis as you keep copying the links
