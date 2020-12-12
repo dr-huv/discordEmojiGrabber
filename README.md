@@ -23,6 +23,7 @@ download any server emoji and use it without nitro,
   ## Instructions on how to use this thing:-
    ## Linux
   ```sh
+  sudo apt-get install xclip
   git clone https://github.com/TheViralClovers/emojiGrabber
   cd emojiGrabber
   pip install -r requirements.txt or pip3 install -r requirements.txt
