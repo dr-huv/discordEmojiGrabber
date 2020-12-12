@@ -9,21 +9,20 @@ from colorama import Fore, Back, Style, init
 init(convert=True)
 
 recentValue = ""
+home = "" # linux and mac have the env variable HOME instead of USERPROFILE, this will point to the home directory
 
 platform = os.name
 
 if platform == "nt":
     import win32clipboard
+    home = os.environ.get("USERPROFILE")
+    
 else:
     import subprocess
+    home = os.environ.get("HOME")
 
 # to create the directory if it doesn't already exist
 def directorycheck():
-    # linux/mac version of USERPROFILE
-    if platform == "nt":
-        home = os.environ.get("USERPROFILE")
-    elif platform == "posix":
-        home = os.environ.get("HOME")
     destination = os.path.join(home, "Desktop", "Discord emojis")
     if not (os.path.isdir(destination)):
         os.mkdir(destination)
@@ -58,7 +57,7 @@ def getRandomFileName():
     )  # this is actually a string of all the lowercase letters
     fileName = "".join((random.choice(letters)) for i in range(8))
     destination = os.path.join(
-        os.environ.get("HOME"), "Desktop", "Discord emojis", fileName + ".png"
+        home, "Desktop", "Discord emojis", fileName + ".png"
     )
     fileDestList.append(fileName)
     fileDestList.append(destination)
