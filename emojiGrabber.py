@@ -1,4 +1,3 @@
-# import win32clipboard
 import string
 import random
 import time
