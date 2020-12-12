@@ -36,6 +36,11 @@ download any server emoji and use it without nitro,
   pip install -r requirements.txt
   python emojiGrabber.py
   ```
+  ## Mac
+  ~~git clone https://github.com/TheViralClovers/emojiGrabber
+  cd emojiGrabber
+  python emojiGrabber.py or python3 emojiGrabber.py~~
+  Sike, doesnt work for mac yet
     
 Once these steps are done, go to an emoji on discord --> right click --> CHOOSE COPY LINK (not copy message link)
 the emoji should automatically appear in a folder of your desktop, no need to open the script again, it will keep downloading the emojis as you keep copying the links
