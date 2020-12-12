@@ -1,3 +1,4 @@
+import pyperclip
 import string
 import random
 import time
@@ -9,16 +10,14 @@ from colorama import Fore, Back, Style, init
 init(convert=True)
 
 recentValue = ""
-home = "" # linux and mac have the env variable HOME instead of USERPROFILE, this will point to the home directory
+home = ""  # linux and mac have the env variable HOME instead of USERPROFILE, this will point to the home directory
 
 platform = os.name
 
 if platform == "nt":
-    import win32clipboard
     home = os.environ.get("USERPROFILE")
-    
+
 else:
-    import subprocess
     home = os.environ.get("HOME")
 
 # to create the directory if it doesn't already exist
@@ -32,19 +31,7 @@ directorycheck()
 
 # to get the value from the clipboard
 def getClipboard():
-    if platform == "nt":
-        win32clipboard.OpenClipboard()
-        clipboardData = win32clipboard.GetClipboardData()
-        win32clipboard.CloseClipboard()
-        return clipboardData
-
-    else:
-        p = subprocess.Popen(
-            ["xclip", "-selection", "clipboard", "-o"], stdout=subprocess.PIPE
-        )
-        retcode = p.wait()
-        clipboardData = p.stdout.read()
-        return str(clipboardData).split("'")[1]
+    return pyperclip.paste()
 
 
 # to get a random name for the file
@@ -56,9 +43,7 @@ def getRandomFileName():
         string.ascii_lowercase
     )  # this is actually a string of all the lowercase letters
     fileName = "".join((random.choice(letters)) for i in range(8))
-    destination = os.path.join(
-        home, "Desktop", "Discord emojis", fileName + ".png"
-    )
+    destination = os.path.join(home, "Desktop", "Discord emojis", fileName + ".png")
     fileDestList.append(fileName)
     fileDestList.append(destination)
     return fileDestList
