@@ -37,9 +37,12 @@ download any server emoji and use it without nitro,
   python emojiGrabber.py
   ```
   ## Mac
-  ~~git clone https://github.com/TheViralClovers/emojiGrabber
-  cd emojiGrabber
-  python emojiGrabber.py or python3 emojiGrabber.py~~
+  ~~git clone https://github.com/TheViralClovers/emojiGrabber~~
+  
+  ~~cd emojiGrabber~~
+  
+  ~~python emojiGrabber.py or python3 emojiGrabber.py~~
+  
   Sike, doesnt work for mac yet
     
 Once these steps are done, go to an emoji on discord --> right click --> CHOOSE COPY LINK (not copy message link)
