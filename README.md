@@ -12,7 +12,7 @@ download any server emoji and use it without nitro,
   3.Saves all the emojis you copy into a folder (called "Discord emojis") in your desktop
   
   ~~4.Rule the world~~
-## Requirments (pip install them)
+## Requirements (pip install them)
   1.requests
   
   2.pyperclip
